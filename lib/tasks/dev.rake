@@ -1,7 +1,7 @@
 namespace :dev do
   desc "Configure the development environment"
   task setup: :environment do
-    puts 'Creating contacts...'
+    puts 'Generating contacts...'
     100.times do |i|
       Contact.create!(
         name: Faker::Name.name,
@@ -9,7 +9,15 @@ namespace :dev do
         birthdate: Faker::Date.between(from: 65.years.ago, to: 18.years.ago)
       )
     end
-    puts 'Contacts successfuly created'
+    puts 'Contacts successfuly generated'
+    puts 'Generating contact kinds...'
+    kinds = %w(Friend Comercial Acquaintance)
+    kinds.each  do |kind|
+      Kind.create!(
+        description: kind
+      )
+    end
+    puts 'Kinds successfuly generated'
   end
 
 end
