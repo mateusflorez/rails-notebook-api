@@ -6,6 +6,9 @@ Rails.application.routes.draw do
 
     resource :phones, only: [:show]
     resource :phones, only: [:show], path: 'relationships/kind'
+
+    resource :address, only: [:show]
+    resource :address, only: [:show], path: 'relationships/kind'
   end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
