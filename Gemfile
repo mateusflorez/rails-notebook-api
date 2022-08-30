@@ -53,3 +53,5 @@ gem "devise_token_auth", "~> 1.2"
 gem "omniauth", "~> 2.1"
 
 gem "devise", "~> 4.8"
+
+gem "versionist", "~> 2.0"
