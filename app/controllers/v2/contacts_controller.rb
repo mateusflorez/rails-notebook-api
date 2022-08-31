@@ -8,7 +8,10 @@ module V2
     def index
       @contacts = Contact.all.page(params[:page])
 
-      paginate json: @contacts
+      # expires_in 30.seconds, public: true
+      if stale?(etag: @contacts)
+        paginate json: @contacts
+      end
     end
 
     # GET /contacts/1
