@@ -6,7 +6,6 @@
 + Pagination
 + Error handling
 + Cache
-+ RACK Middleware
 + Authentication
 + TDD
 

@@ -59,3 +59,5 @@ gem "versionist", "~> 2.0"
 gem "kaminari", "~> 1.2"
 
 gem "api-pagination", "~> 5.0"
+
+gem "rspec-rails", "~> 5.1"
