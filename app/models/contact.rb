@@ -1,4 +1,7 @@
 class Contact < ApplicationRecord
+
+  paginates_per 10
+
   #Associations
   belongs_to :kind
   has_many :phones

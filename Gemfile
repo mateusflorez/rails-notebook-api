@@ -55,3 +55,7 @@ gem "omniauth", "~> 2.1"
 gem "devise", "~> 4.8"
 
 gem "versionist", "~> 2.0"
+
+gem "kaminari", "~> 1.2"
+
+gem "api-pagination", "~> 5.0"
