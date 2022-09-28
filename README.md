@@ -12,10 +12,10 @@
 ## Instalation instructions:
 ```
 #Clone the repository.
-git clone https://github.com/mateusflorez/rubymvcblog.git
+git clone https://github.com/mateusflorez/rails-notebook-api.git
 
 #Open the terminal on the project root file.
-cd rubymvcblog
+cd rails-notebook-api 
 
 #Install Ruby on Rails dependencies
 bundle install
